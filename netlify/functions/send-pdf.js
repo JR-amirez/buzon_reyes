@@ -88,7 +88,7 @@ exports.handler = async (event) => {
         const from = process.env.FROM_EMAIL || SMTP_USER;
 
         // Emojis y textos según buzón (puedes ajustar nombres si quieres)
-        const displayName = mailboxName === "Gulugu" ? "Gulugu" : "Davidcito";
+        const displayName = mailboxName === "Gulugu" ? "Gulugu 💜" : "Davidcito 💚";
 
         await transporter.sendMail({
             from,
@@ -96,11 +96,10 @@ exports.handler = async (event) => {
             subject: `👑✨ Día de Reyes: PDF recibido para ${displayName}`,
             text:
                 `¡Hola!\n\n` +
-                `🎁👑 Hemos recibido un PDF enviado desde el buzón navideño de ${displayName}.\n\n` +
+                `🎁👑 Haz recibido una carta enviada desde el buzón navideño de ${displayName}.\n\n` +
                 `📎 Archivo adjunto: ${fileName}\n\n` +
                 `Que esta temporada esté llena de alegría, salud y buenos deseos.\n` +
-                `✨ ¡Feliz Día de Reyes!\n\n` +
-                `— Envío automático`,
+                `✨ ¡Feliz Día de Reyes!\n\n`,
             // (Opcional) Versión HTML para que se vea más bonito en clientes modernos
             html: `
     <div style="font-family: Arial, sans-serif; line-height:1.5; color:#111;">
@@ -121,9 +120,6 @@ exports.handler = async (event) => {
       <p style="margin:0; font-weight:bold;">✨ ¡Feliz Día de Reyes!</p>
 
       <hr style="margin:16px 0; border:none; border-top:1px solid #eee;">
-      <p style="margin:0; font-size:12px; color:#6b7280;">
-        Mensaje generado automáticamente.
-      </p>
     </div>
   `,
             attachments: [
