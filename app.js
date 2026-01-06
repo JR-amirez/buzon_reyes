@@ -41,7 +41,7 @@ document.querySelectorAll(".mailbox").forEach((mailboxEl) => {
 
         // UI: bloquea botón mientras envía
         sendBtn.disabled = true;
-        statusEl.textContent = `Enviando PDF desde "${mailboxName}"...`;
+        statusEl.textContent = `Enviando carta...`;
 
         try {
             // FormData permite mandar archivos usando multipart/form-data

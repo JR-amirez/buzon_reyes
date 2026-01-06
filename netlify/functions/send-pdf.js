@@ -105,7 +105,7 @@ exports.handler = async (event) => {
     <div style="font-family: Arial, sans-serif; line-height:1.5; color:#111;">
       <h2 style="margin:0 0 8px;">👑✨ ¡Feliz Día de Reyes!</h2>
       <p style="margin:0 0 12px;">
-        Hemos recibido un <strong>PDF</strong> enviado desde el buzón navideño de
+        Haz recibido una carta enviada desde el buzón navideño de
         <strong>${displayName}</strong>.
       </p>
 
