@@ -35,7 +35,7 @@ document.querySelectorAll(".mailbox").forEach((mailboxEl) => {
         // 3) Validación: tamaño máximo
         const sizeMb = file.size / (1024 * 1024);
         if (sizeMb > MAX_SIZE_MB) {
-            statusEl.textContent = `El PDF pesa ${sizeMb.toFixed(2)} MB. Máximo permitido: ${MAX_SIZE_MB} MB.`;
+            statusEl.textContent = `El PDF pesa ${sizeMb.toFixed(2)} MB. Maximo permitido: ${MAX_SIZE_MB} MB.`;
             return;
         }
 
