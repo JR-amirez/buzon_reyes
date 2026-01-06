@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buzones de Reyes</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Fondo temático: la “capa” del cielo -->
+    <div class="sky" aria-hidden="true"></div>
+
+    <main class="container">
+        <header class="hero">
+            <h1>📬 Buzones de Reyes</h1>
+            <p>Selecciona un PDF y envíalo desde el buzón correcto.</p>
+        </header>
+
+        <section class="grid">
+            <!-- Buzón 1 -->
+            <article class="mailbox" data-mailbox-name="Gulugu" data-to-email="correo_gulugu@ejemplo.com">
+                <div class="mailbox-shape" aria-hidden="true">
+                    <div class="flag"></div>
+                    <div class="slot"></div>
+                </div>
+
+                <div class="mailbox-content">
+                    <h2>Gulugu</h2>
+
+                    <label class="file-label">
+                        <span>📄 Subir PDF</span>
+                        <input class="file-input" type="file" accept="application/pdf" />
+                    </label>
+
+                    <button class="send-btn" type="button">Enviar a su correo</button>
+
+                    <p class="status" role="status" aria-live="polite"></p>
+                </div>
+            </article>
+
+            <!-- Buzón 2 -->
+            <article class="mailbox" data-mailbox-name="Davidcito" data-to-email="correo_davidcito@ejemplo.com">
+                <div class="mailbox-shape" aria-hidden="true">
+                    <div class="flag"></div>
+                    <div class="slot"></div>
+                </div>
+
+                <div class="mailbox-content">
+                    <h2>Davidcito</h2>
+
+                    <label class="file-label">
+                        <span>📄 Subir PDF</span>
+                        <input class="file-input" type="file" accept="application/pdf" />
+                    </label>
+
+                    <button class="send-btn" type="button">Enviar a su correo</button>
+
+                    <p class="status" role="status" aria-live="polite"></p>
+                </div>
+            </article>
+        </section>
+
+        <section class="kings">
+            <img src="assets/reyes-magos.png" alt="Los Reyes Magos" class="kings-img" />
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
