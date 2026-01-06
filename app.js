@@ -61,7 +61,7 @@ document.querySelectorAll(".mailbox").forEach((mailboxEl) => {
                 throw new Error(text || `Error HTTP ${resp.status}`);
             }
 
-            statusEl.textContent = `✅ Enviado correctamente a ${toEmail}. ¡Feliz Día de Reyes!`;
+            statusEl.textContent = `¡Feliz Día de Reyes!`;
             fileInput.value = ""; // Limpia selección
         } catch (err) {
             statusEl.textContent =
