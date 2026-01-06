@@ -1,9 +1,7 @@
 {
-    "name": "buzones-reyes",
-    "private": true,
-    "type": "module",
-    "dependencies": {
-        "@sendgrid/mail": "^8.1.0",
-        "busboy": "^1.6.0"
-    }
+  "private": true,
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "nodemailer": "^6.9.0"
+  }
 }

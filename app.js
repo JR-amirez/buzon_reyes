@@ -50,7 +50,7 @@ document.querySelectorAll(".mailbox").forEach((mailboxEl) => {
             formData.append("pdf", file, file.name);
 
             // Este endpoint lo implementas en tu backend (Node, PHP, serverless, etc.)
-            const resp = await fetch("/api/send-pdf", {
+            const resp = await fetch("/.netlify/functions/send-pdf", {
                 method: "POST",
                 body: formData,
             });
