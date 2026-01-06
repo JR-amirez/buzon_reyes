@@ -93,7 +93,7 @@ exports.handler = async (event) => {
         await transporter.sendMail({
             from,
             to,
-            subject: `👑✨ Día de Reyes: Carta de ${displayName} recibida`,
+            subject: `👑✨ Día de Reyes: Carta de ${displayName}`,
             text:
                 `¡Hola!\n\n` +
                 `🎁👑 Haz recibido una carta enviada desde el buzón navideño de ${displayName}.\n\n` +
